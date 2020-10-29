@@ -68,5 +68,5 @@ router.get('/messages/unread', async (ctx, next) => {
 });
 app.use(router.routes()).use(router.allowedMethods());
 const server = http.createServer(app.callback());
-const port = process.env.PORT || 7070;
+const port = process.env.PORT || 2000;
 server.listen(port);
